@@ -8,13 +8,13 @@
    * COLORS
    */
 
-  --gold-crayola: hsl(38, 61%, 73%);
+  --gold-crayola: #5e503f;
   --quick-silver: hsla(0, 0%, 65%, 1);
   --davys-grey: hsla(30, 3%, 34%, 1);
   --smoky-black-1: hsla(40, 12%, 5%, 1);
-  --smoky-black-2: hsla(30, 8%, 5%, 1);
+  --smoky-black-2: #92817a;
   --smoky-black-3: hsla(0, 3%, 7%, 1);
-  --eerie-black-1: hsla(210, 4%, 9%, 1);
+  --eerie-black-1: #362417;
   --eerie-black-2: hsla(210, 4%, 11%, 1);
   --eerie-black-3: hsla(180, 2%, 8%, 1);
   --eerie-black-4: hsla(0, 0%, 13%, 1);
