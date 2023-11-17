@@ -29,11 +29,15 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0"
+    />
     <!-- 
     - custom css link
   -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base.css">
 
     <!-- 
     - preload images
@@ -242,8 +246,8 @@
                 Come with family & feel the joy of mouthwatering food
               </p>
 
-              <a href="#" class="btn btn-primary slider-reveal">
-                <span class="text text-1">View Our Menu</span>
+              <a href="#" class="btn btn-primary slider-reveal" style="background-color: rgba(0, 0, 0, 0.158);">
+                <span class="text text-1" style="color: rgb(241, 235, 236);">View Our Menu</span>
 
                 <span class="text text-2" aria-hidden="true"
                   >View Our Menu</span
@@ -646,7 +650,15 @@
                   </p>
 
                 </div>
-
+                <button
+                class="icon-btn fav-btn"
+                aria-label="Add to favorite"
+                data-toggle-btn
+              >
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >favorite</span
+                >
+              </button>
               </div>
             </li>
 
@@ -673,7 +685,15 @@
                   </p>
 
                 </div>
-
+                <button
+                class="icon-btn fav-btn"
+                aria-label="Add to favorite"
+                data-toggle-btn
+              >
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >favorite</span
+                >
+              </button>
               </div>
             </li>
 
@@ -700,7 +720,15 @@
                   </p>
 
                 </div>
-
+                <button
+                class="icon-btn fav-btn"
+                aria-label="Add to favorite"
+                data-toggle-btn
+              >
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >favorite</span
+                >
+              </button>
               </div>
             </li>
 
@@ -729,7 +757,15 @@
                   </p>
 
                 </div>
-
+                <button
+                class="icon-btn fav-btn"
+                aria-label="Add to favorite"
+                data-toggle-btn
+              >
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >favorite</span
+                >
+              </button>
               </div>
             </li>
 
@@ -756,7 +792,15 @@
                   </p>
 
                 </div>
-
+                <button
+                class="icon-btn fav-btn"
+                aria-label="Add to favorite"
+                data-toggle-btn
+              >
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >favorite</span
+                >
+              </button>
               </div>
             </li>
 
@@ -783,7 +827,15 @@
                   </p>
 
                 </div>
-
+                <button
+                class="icon-btn fav-btn"
+                aria-label="Add to favorite"
+                data-toggle-btn
+              >
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >favorite</span
+                >
+              </button>
               </div>
             </li>
 
@@ -841,13 +893,13 @@
 <!-- 
         - #RESERVATION
       -->
-
+      
       <section class="reservation" id="reservation">
         <div class="container">
 
           <div class="form reservation-form bg-black-10">
 
-            <form action="" class="form-left">
+            <form class="form-left" id="reservationForm">
 
               <h2 class="headline-1 text-center">Online Reservation</h2>
 
@@ -857,9 +909,9 @@
               </p>
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" id="name">
 
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" id="phone">
               </div>
 
               <div class="input-wrapper">
@@ -914,14 +966,13 @@
 
               </div>
 
-              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
-
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field" id="msg"></textarea>
               <button type="submit" class="btn btn-secondary">
                 <span class="text text-1">Book A Table</span>
 
                 <span class="text text-2" aria-hidden="true">Book A Table</span>
               </button>
-
+            
             </form>
 
             <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
@@ -1146,7 +1197,7 @@
   -->
 
   <footer class="footer section has-bg-image text-center"
-    style="background-image: url('./assets/images/footer-bg.jpg')">
+    style="background-image: url('./assets/images/footer-bg.jpg')" id="footer">
     <div class="container">
 
       <div class="footer-top grid-list">
@@ -1211,9 +1262,9 @@
             <a href="#" class="label-2 footer-link hover-underline">About Us</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#" class="label-2 footer-link hover-underline">Our Chefs</a>
-          </li>
+          </li> -->
 
           <li>
             <a href="#" class="label-2 footer-link hover-underline">Contact</a>
@@ -1232,7 +1283,7 @@
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+            <a href="#footer" class="label-2 footer-link hover-underline" onclick="tweet()">Twitter</a>
           </li>
 
           <li>
@@ -1240,7 +1291,7 @@
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+            <a href="store_locator/store.html" class="label-2 footer-link hover-underline">Google Map</a>
           </li>
 
         </ul>
@@ -1291,5 +1342,41 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#reservationForm").submit(function (event) {
+      event.preventDefault();
+      var name = $("#name").val();
+      var phone = $("#phone").val();
+
+      if (name === "" ) {
+        alert("Name required !");
+        return;
+      }
+      if(phone.length==0)
+        {
+            alert('Phone no required');
+            return ;
+        }
+        if(phone.length!=10)
+        {
+            alert('Enter a valid 10 digit number');
+            return;
+        }
+        if(!phone.match(/^[0-9]{10}$/))
+        {
+            alert('Phone not Valid');
+            return;
+        }
+      alert("Form submitted successfully!");
+      var reservationSection = $("#reservation");
+      $('html, body').animate({
+        scrollTop: reservationSection.offset().top
+      }, 1000);
+    });
+  });
+</script>
+
   </body>
 </html>
