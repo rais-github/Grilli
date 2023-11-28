@@ -118,3 +118,22 @@ $toggleBtns.forEach(btn=>{
         btn.classList.toggle('active');
     })
 })
+
+// Subscribe
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzLMaT5cabJCwU2ZEkJjq3RCvj1Kb2NDZ9c2-M-dbnzLgibUWNzl0UY7biBV13PX3vv/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg =document.getElementById('spn');
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response =>{
+        form.reset();
+        msg.innerHTML="Thank you for subscribing!";
+        setTimeout(()=>{
+            msg.innerHTML="";
+        },4001)
+    })
+    .catch(error => console.error('Error!', error.message))
+})
