@@ -959,6 +959,13 @@ body.nav-active { overflow: hidden; }
 
 
 
+.service-card {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
 
 
 
@@ -1264,7 +1271,7 @@ textarea.input-field {
 .feature-card .card-icon {
   max-width: max-content;
   margin-inline: auto;
-  /* transition: var(--transition-2); */
+  transition:transform 0.3s ease-in-out;
 }
 
 .feature-card:hover .card-icon { transform: scale(-1) rotate(180deg); }
@@ -1319,14 +1326,16 @@ textarea.input-field {
   margin-block-end: 5px;
 }
 
-/* .event-card .card-banner .img-cover { transition: var(--transition-2); } */
-/* 
-.event-card:is(:hover, :focus-within) .img-cover { transform: scale(1.05); } */
+.event-card .card-banner .img-cover { transition: transform 500ms ease; }
+
+.event-card:is(:hover, :focus-within) .img-cover { transform: scale(1.05); }
 
 .event .btn {
   margin-inline: auto;
   margin-block-start: 40px;
 }
+
+
 
 
 
