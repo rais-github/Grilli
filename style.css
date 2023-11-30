@@ -97,9 +97,9 @@
    * TRANSITION
    */
 
-  /* --transition-1: 250ms ease;
+  --transition-1: 250ms ease;
   --transition-2: 500ms ease;
-  --transition-3: 1000ms ease; */
+  --transition-3: 1000ms ease;
 
 }
 
@@ -465,14 +465,14 @@ body.nav-active { overflow: hidden; }
 
 .w-100 { width: 100%; }
 
-/* .move-anim { animation: move 5s linear infinite; }
+.move-anim { animation: move 5s linear infinite; }
 
 @keyframes move {
   0%,
   100% { transform: translateY(0); }
 
   50% { transform: translateY(30px); }
-} */
+}
 
 .has-bg-image {
   background-repeat: no-repeat;
@@ -937,23 +937,23 @@ body.nav-active { overflow: hidden; }
   background-image: url('images/img-pattern.svg');
   background-position: center;
   background-size: cover;
-  /* background-repeat: repeat; */
-  /* transition: var(--transition-2);
-  transition-delay: 0; */
+   background-repeat: repeat; 
+  transition: var(--transition-2);
+  transition-delay: 0;
   z-index: -1;
-  /* will-change: transform; */
+  will-change: transform;
 }
 
-/* .service-card:is(:hover, :focus-within) .has-before::before {
+.service-card:is(:hover, :focus-within) .has-before::before {
   transform: rotateY(0.5turn) translateX(50%);
   transition-delay: 300ms;
 } */
-/* 
+ 
 .service-card .card-banner { transition: var(--transition-2); }
 
-.service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05); } */
+.service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05); } 
 
-/* .service .card-title { margin-block-end: 12px; } */
+ .service .card-title { margin-block-end: 12px; }
 
 
 
@@ -1095,8 +1095,8 @@ body.nav-active { overflow: hidden; }
   flex-shrink: 0;
   border-radius: var(--radius-24);
 }
-/* 
-.menu-card .card-title { transition: var(--transition-1); } */
+
+.menu-card .card-title { transition: var(--transition-1); } 
 
 .menu-card .card-title:is(:hover, :focus-visible) { color: var(--gold-crayola); }
 
